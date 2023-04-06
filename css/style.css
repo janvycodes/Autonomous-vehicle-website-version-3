@@ -1,0 +1,617 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header{
+	width: 100%;
+	height: 80px;
+	padding: 0 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #171a21;
+	color: #fff;
+	z-index: 1000;
+}
+#logo{
+	font-size: 23px;
+}
+#loggo{
+	font-size: 23px;
+	color: #fff;
+}
+.menu{
+	float: right;
+	color: #fff;
+}
+.menu i{
+	font-size: 16px;
+	color: #fff;
+}
+.inner-width{
+  max-width: 1000px;
+}
+
+.navigation-menu{
+  float: right;
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+}
+
+.navigation-menu a{
+  margin-left: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px 10px;
+  transition: .3s linear;
+}
+
+.navigation-menu a:hover{
+  background: #fff;
+  color: #2f3640;
+  text-decoration: none;
+  border-radius: 4px;
+  transform: scale(1.1);
+}
+.nav-menu a{
+  margin-left: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px 10px;
+  transition: .3s linear;
+}
+
+.nav-menu a:hover{
+  background: #fff;
+  color: #2f3640;
+  text-decoration: none;
+  border-radius: 4px;
+  transform: scale(1.1);
+}
+.menu-toggle-btn{
+  float: right;
+  height: 40px;
+  width: 40px;
+  line-height: 40px !important;
+  display: none !important;
+  cursor: pointer;
+}
+.banner{
+	width: 100%;
+	height: 400px;
+	background-image: url(../media/bg.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 140px;
+	text-align: center;
+}
+.banner h2{
+	font-size: 50px;
+	text-align: center;
+	color: #fff;
+}
+.banner p{
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+}
+.login{
+	width: 100%;
+	height: relative;
+	display: flex;
+	padding: 110px 0;
+	justify-content: space-around;
+	align-items: center;
+	background-image: url(../media/bk.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	z-index: 1000;
+}
+.fm{
+	width: 350px;
+	height: relative;
+	background-color: rgb(255,255,255,0.7);
+}
+.login h2{
+	text-align: center;
+	padding: 20px;
+	color: #171a21;
+}
+form{
+	padding: 30px 30px 30px 30px;
+}
+form a{
+	text-decoration: none;
+	float: right;
+	padding: 10px 7px;
+	color: blue;
+}
+form a:hover{
+	color: #000;
+}
+input{
+	width: 100%;
+	padding: 15px 20px;
+	margin: 10px 0;
+}
+input:focus{
+	outline-color: #000;
+}
+input[type=submit]{
+	background-color: #171a21;
+	color: #fff;
+}
+input[type=submit]:hover{
+	background-color: grey;
+	color: #171a21;
+}
+button{
+	width: 100%;
+	padding: 15px 20px;
+	margin: 10px 0;
+	background-color: #171a21;
+	color: #fff;
+}
+button:hover{
+	background-color: grey;
+	color: #171a21;
+}
+.alert{
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.main{
+	width: 100%;
+	height:relative;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+}
+.sidebar{
+	width: 20%;
+	height: relative;
+	padding: 10px 40px;
+	background-color: whitesmoke;
+}
+.other{
+	width: 80%;
+	height: relative;
+	padding: 10px 25px;
+	background-color: transparent;
+}
+.sidebar h2{
+	padding: 5px 0 20px 0;
+	font-size: 23px;
+}
+.sidebar a{
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 20px 5px;
+	color: #000;
+}
+.sidebar .who{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 18px;
+	color: green;
+}
+footer{
+	width: 100%;
+	height:150px;
+	background-color: #171a21;
+	padding: 0 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+}
+.social img{
+	width: 35px;
+	height: 35px;
+}
+.copyr{
+	color: #fff;
+}
+#demo{
+	width: 100%;
+	text-align: center;
+	background-color: grey;
+	font-weight: 700;
+	padding: 20px 0;
+}
+.prod{
+	width: 100%
+	height: relative;
+}
+.desc{
+	float: right;
+	height: 100%;
+	padding: 20px 0;
+	color: #fff;
+	width: relative;
+	text-align: center;
+}
+.desc i{
+	color: #fff;
+}
+/* Dropdown button on hover & focus */
+.dropbtn:focus {
+  background-color: transparent;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: relative;
+  margin-top: 20px;
+ background-color: whitesmoke;
+  min-width: relative;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 111111;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #171a21;
+	text-decoration: none;
+	color: #fff;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.profile{
+	width: 100%;
+	height: 130vh;
+	padding: 50 150px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 1000;
+}
+.prof-main{
+	width: 800px;
+	height: relative;
+	padding: 0 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #171a21;
+	z-index: 1000;
+}
+.profile-1{
+	width: 40%;
+	background-color: whitesmoke;
+}
+.profile-1 h2{
+	padding: 20px 0;
+	text-align: center;
+}
+.profile-1 p{
+	padding: 10px 20px;
+}
+.profile-2{
+	width: 60%;
+	padding: 0 50px;
+}
+.profile-2 h2{
+	text-align: center;
+	background-color: whitesmoke;
+	padding: 10px;
+}
+.profile-2 form{
+	background-color: whitesmoke;
+}
+.wow{
+	width: 400px;
+	height: relative;
+	padding: 0 50px;
+	background-color: whitesmoke;
+	z-index: 1000;
+}
+.wow h2{
+	text-align: center;
+	background-color: whitesmoke;
+	padding: 10px;
+}
+.proffile{
+	width: 100%;
+	height: 80vh;
+	padding: 50 150px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 1000;
+}
+.prod h2{
+	text-align: center;
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+.yess{
+	width: 100%;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+}
+.yes-1,.yes-2,.yes-3{
+	width: 33%;
+	padding: 10px 20px;
+	height: relative;
+	text-align: center;
+}
+.yy{
+	color: #171a21;
+	font-weight: 700;
+}
+.gallery{
+	width: 100%;
+	height: relative;
+}
+.grid-container{
+	width: 100%;
+	padding: 10px 30px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+.grid-container img{
+	width: 300px;
+	height: 200px;
+}
+.gallery h2{
+	text-align: center;
+	font-weight: 700;
+}
+.yeah{
+	width: 100%;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: whitesmoke;
+	z-index: 1000;
+}
+h3{
+	text-align: center;
+	font-size: 20px;
+	padding: 10px 0;
+}
+#about{
+	width: 50%;
+	height: relative;
+	padding: 10px 30px;
+}
+#about video{
+	width: 80%;
+	height: 250px;
+}
+#contact{
+	width: 50%;
+	height: relative;
+}
+#contact form{
+	padding: 30px 30px 30px 30px;
+}
+#contact form a{
+	text-decoration: none;
+	float: right;
+	padding: 10px 7px;
+	color: blue;
+}
+#contact form a:hover{
+	color: #000;
+}
+#contact input{
+	width: 100%;
+	padding: 15px 20px;
+	margin: 10px 0;
+}
+#contact textarea{
+	width: 100%;
+	padding: 15px 20px;
+	height: 150px;
+	margin: 10px 0;
+}
+#contact input:focus{
+	outline-color: #000;
+}
+#contact input[type=radio]{
+	width: 5%;
+	float: left;
+}
+#contact input[type=submit]:hover{
+	background-color: grey;
+	color: #171a21;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+span{
+	color: orange;
+}
+@media screen and (max-width:700px) {
+ .menu-toggle-btn{
+    display: block !important;
+  }
+
+  .navigation-menu{
+    position: fixed;
+    width: 100%;
+    max-width: 150px;
+    background: #171a21;
+    top: 90px;
+    right: 30px;
+    display: none;
+    padding: 20px 20px;
+    box-sizing: border-box;
+  }
+
+  .navigation-menu::before{
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #171a21;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+  }
+
+  .navigation-menu a{
+    display: block;
+    margin: 10px 0;
+  }
+
+  .navigation-menu.active{
+    display: block;
+  }
+  .hdn{
+  	display: none;
+  }
+  .sidebar{
+  	padding: 15px;
+  }
+  .sidebar a{
+  	padding: 5px 30px;
+  }
+  footer{
+  	padding: 20px 50px;
+  	flex-direction: column;
+  }
+  #demo{
+  	padding: 20px 10px;
+  }
+  .sidebar .who{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 14px;
+	color: green;
+}
+.banner{
+	padding: 100px 50px;
+	text-align: center;
+}
+.banner h2{
+	font-size: 30px;
+	text-align: center;
+	color: #171a21;
+}
+.banner p{
+	font-size: 16px;
+	text-align: center;
+	color: whitesmoke;
+}
+.prof-main{
+	width: 350px;
+	padding: 0;
+	flex-direction: column;
+}
+.profile-1{
+	width: 100%;
+	height: relative;
+}
+.profile-2{
+    width: 100%;
+    height: relative;
+    padding: 0;
+	}	
+.profile{
+	padding: 50px;
+	height: 160vh;
+}
+.grid-container img{
+	width: 100px;
+	height: 100px;
+}
+.yeah{
+	width: 100%;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	background-color: whitesmoke;
+	z-index: 1000;
+}
+#about{
+	width: 100%;
+	height: relative;
+	padding: 10px 30px;
+}
+#about{
+	width: 100%;
+	height: relative;
+}
+}
+
+ 
